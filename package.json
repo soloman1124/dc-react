@@ -1,0 +1,34 @@
+{
+  "name": "dc-react",
+  "version": "0.0.1",
+  "description": "React Components for DC",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel ./components --out-dir ./lib",
+    "build": "NODE_ENV=production npm run babel",
+    "prepublish": "npm run build",
+    "lint": "eslint ./components/**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dc",
+    "react"
+  ],
+  "author": "Soloman Weng",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.0",
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.9.1",
+    "eslint-plugin-react": "^6.6.0"
+  },
+  "dependencies": {
+    "dc": "^2.0.0-beta.32",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}
