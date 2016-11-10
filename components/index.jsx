@@ -6,9 +6,10 @@ import _DataTable from './DataTable';
 import _PieChart from './PieChart';
 import _RowChart from './RowChart';
 
-export const Base = _Base;
 export const ChartContainer = _ChartContainer;
+export const Base = _Base;
 export const BubbleChart = _BubbleChart;
 export const DataCount = _DataCount;
 export const DataTable = _DataTable;
+export const PieChart = _PieChart;
 export const RowChart = _RowChart;
