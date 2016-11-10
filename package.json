@@ -2,7 +2,7 @@
   "name": "dc-react",
   "version": "0.0.1",
   "description": "React Components for DC",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "babel": "babel ./components --out-dir ./lib",
     "build": "NODE_ENV=production npm run babel",
