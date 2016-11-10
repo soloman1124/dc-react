@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import dc from 'dc';
-import { Base } from './Base.jsx!';
+import { Base } from './Base';
 
 
 class RowChart extends Component {
