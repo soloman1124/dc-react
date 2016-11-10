@@ -1,6 +1,6 @@
 {
   "name": "dc-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Components for DC",
   "main": "lib/index.js",
   "scripts": {
@@ -10,12 +10,17 @@
     "lint": "eslint ./components/**",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:soloman1124/dc-react.git"
+  },
   "keywords": [
     "dc",
     "react"
   ],
   "author": "Soloman Weng",
   "license": "ISC",
+  "homepage": "https://github.com/soloman1124/dc-react#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.0",
