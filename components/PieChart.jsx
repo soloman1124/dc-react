@@ -17,7 +17,7 @@ class PieChart extends Component {
   };
 
   render() {
-    return <div ref={this.loadChart} />;
+    return <div className={this.props.className} ref={this.loadChart} />;
   }
 }
 
