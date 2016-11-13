@@ -9,7 +9,11 @@ export let Base = DCComponent => class extends Component {
     height: PropTypes.number,
     title: PropTypes.func,
     label: PropTypes.func,
-    transitionDuration: PropTypes.func
+    transitionDuration: PropTypes.number,
+    margins: PropTypes.object,
+    mouseZoomable: PropTypes.bool,
+    legend: PropTypes.object,
+    setChart: PropTypes.func
   };
 
   static contextTypes = {
@@ -19,8 +23,13 @@ export let Base = DCComponent => class extends Component {
   dcHelper = (dcComponent, dcChart, loadDefault = true) => {
     let helper = new ChartPropertyHelper(dcComponent, dcChart);
     if (loadDefault) {
-      helper.setProperties('width', 'height', 'title', 'label', 'transitionDuration')
+      helper.setProperties('width', 'height', 'title', 'label',
+                           'transitionDuration', 'margins', 'mouseZoomable',
+                           'legend')
             .setContextProperties('dimension', 'group');
+    }
+    if (dcComponent.props.setChart) {
+      dcComponent.props.setChart(dcChart);
     }
 
     return helper;
