@@ -1,6 +1,6 @@
 {
   "name": "dc-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Components for DC",
   "main": "lib/index.js",
   "scripts": {
